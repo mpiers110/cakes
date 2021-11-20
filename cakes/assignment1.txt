@@ -1,0 +1,106 @@
+3. fun main() {
+   bill()
+ }
+
+ fun bill(){
+   val units:Double = 180.0
+   if(units <=50){
+       val pay = units * 0.5 + 10
+       println("You will pay Rs $pay")
+   } 
+   
+   else if(units > 50 && units <= 150){
+       val first = 50 * 0.5
+       val second = (units - 50) * 1.0
+       val total = first + second + 10
+       println("You will pay Rs $total")
+   }
+   
+    else if(units > 150 && units <= 250){
+       val first = 50 * 0.5
+       val second = 100 * 1.0
+       val third = (units - 150) * 1.2 
+       val total = first + second + third + 10
+       println("You will pay Rs $total")
+   }
+   else {
+        val first = 50 * 0.5
+       val second = 100 * 1.0
+       val third = 100* 1.2 
+       val fourth=(units)*1.5
+       val total = first + second + third + fourth + 10
+       println("You will pay Rs $total")
+   } 
+ }//end
+
+
+------------------------------------------------------------------------------------------------------------
+
+1. fun main() {
+    bmi()
+ }//ends main
+
+ fun bmi(){
+    val weight:Double =18.3
+    val height:Double = 12.8
+    
+    val answer :Double=weight/height*height 
+    
+    if(answer<18.5){
+        println("your weight is $answer,Underweight")
+    }
+    
+    else if(answer>=18.5 &&answer<22.9){
+        println("your weight is $answer,Normal")
+    }
+    
+    else if(answer>=23 &&answer<24.9){
+        println("your weight is  $answer,Overweight")
+    }
+    
+    else if(answer>=25 &&answer<29.9){
+        println("your weight is $answer,Preobesse")
+    }
+   
+    else  if(answer>=30.0 &&answer<34.9){
+        println("your weight is $answer,Obesse class I")
+    }
+    
+    else if(answer>=35 &&answer<39.9){
+        println("your weight is $answer,Obesse class II")
+    }
+    
+    else if(answer>=40){
+        println("Your weight is $answer,Obesse class III")
+    }
+    
+ }//ends bmi
+
+-----------------------------------------------------------------------------------
+
+
+
+2. fun main() {
+    cost()
+ }//ends main
+
+ fun cost(){
+    val distance:Short =18
+    
+    if(distance<=100){
+        println("Cost is 5.00 ")
+    }
+    
+    else if(distance>100 &&distance<500){
+        println("Cost is 8.00")
+    }
+    
+    else if(distance>500 &&distance<1000){
+        println("Cost is 10.00")
+    }
+    
+    else if(distance>=1000){
+        println("Cost is 12.00")
+    }
+   
+ }//ends cost
